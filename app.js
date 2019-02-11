@@ -67,7 +67,12 @@ router.post('/editgame/:id', function(req,res){
         _id:req.params.id
     }).then(function(entry){
         entry.title = req.body.title;
-        entry.genre = req.body.genre;
+        entry.type = req.body.type;
+        entry.loc = req.body.loc;
+        entry.priority = req.body.priority;
+        entry.description = req.body.description;
+        entry.found = req.body.found;
+        entry.progress = req.body.progress;
 
         entry.save().then(function(idea){
             res.redirect('/');
@@ -87,7 +92,12 @@ app.post('/addgame', function(req,res){
     console.log(req.body);
     var newEntry = {
         title:req.body.title,
-        genre:req.body.genre
+        type:req.body.type,
+        loc:req.body.loc,
+        priority:req.body.priority,
+        description:req.body.description,
+        found:req.body.found,
+        progress:req.body.progress
     }
 
     new Entry(newEntry).save().then(function(entry){

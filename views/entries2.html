@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Game List App Page</title>
+    <title>Bug List App Page</title>
     <link href="main.css" rel="stylesheet" type="text/css">
 </head>
 <body>
@@ -22,10 +22,15 @@
                 //document.getElementById('entries-list').innerHTML += "<br>" + entry.title;
             
                 document.getElementById('entries-list').innerHTML 
-                += "<div class ='entries'><p>Game: "
-                + entry.title+"</p><p>Genre: "
-                +entry.genre+"</p><p>Date: "
-                +entry.date+"</p></div><br>"
+                += "<div class ='entries'><p>Bug: "
+                    +entry.title+"</p><p>Type: "
+                    +entry.type+"</p><p>Location: "
+                    +entry.loc+"</p><p>>Priorty:"
+                    +entry.priority+"</p><p>Description: "
+                    +entry.description+"</p><p>Found by: "
+                    +entry.found+"</p><p>Progress:"
+                    +entry.progress+"</p><p>Date:"
+                    +entry.date+"</p></div><br>"
             
             });
         });

@@ -4,8 +4,13 @@
     <P>These are the current bugs</P>
     {{#each entries}}
     <div class = 'entries'>
-        <p class = "font-weight-bold">Game:{{title}}</p>
-        <p>Genre:{{genre}}</p>
+        <p class = "font-weight-bold">Bug:{{title}}</p>
+        <p>Type:{{type}}</p>
+        <p>Location:{{loc}}</p>
+        <p>Priority:{{priority}}</p>
+        <p>Description:{{description}}</p>
+        <p>Found by:{{found}}</p>
+        <p>Progress:{{progress}}</p>
         <p>Date:{{date}}</p>
         <a href='/gameentries/edit/{{id}}'class="btn btn-dark">edit</a>
         <form method="POST" action="/{{id}}?_method=Delete">
