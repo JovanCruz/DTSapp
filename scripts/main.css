@@ -1,0 +1,12 @@
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: purple;
+
+}
+
+#wrapper{
+    width:900px;
+    margin: auto;
+    background-color: blue;
+    color:black;
+}
