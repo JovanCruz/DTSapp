@@ -6,7 +6,27 @@ var EntrySchema = new Schema({
         type:String,
         required:true
     },
-    genre:{
+    type:{
+        type:String,
+        required:true
+    },
+    loc:{
+        type:String,
+        required:true
+    },
+    priority:{
+        type:String,
+        required:true
+    },
+    description:{
+        type:String,
+        required:true
+    },
+    found:{
+        type:String,
+        required:true
+    },
+    progress:{
         type:String,
         required:true
     },
